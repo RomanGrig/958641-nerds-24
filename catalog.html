@@ -7,161 +7,128 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-    <a class="main-header-logo" href="index.html">
-        <img src="img/index-logo.svg" alt="Логотип дизайн-студии «Нёрдс»" width="200" height="200">
-    </a>
-      <ul class="site-navigation">
-        <li><a href="index.html">Студия</a></li>
-        <li><a href="customers.html">Клиенты</a></li>
-        <li><a class="site-navigation-current">Магазин</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-      </ul>
-      <ul class="user-navigation">
-        <li class="basket.html">Корзина</li>
-      </ul>
+        <a class="main-header-logo" href="index.html">
+          <img src="img/index-logo.svg" alt="Логотип дизайн-студии «Нёрдс»" width="200" height="200">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="index.html">Студия</a></li>
+          <li><a href="customers.html">Клиенты</a></li>
+          <li><a class="site-navigation-current">Магазин</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+        <ul class="user-navigation">
+          <li class="basket.html">Корзина</li>
+        </ul>
       </nav>
     </header>
     <main class="container">
       <h1 class="catalog-welcome">Магазин готовых шаблонов</h1>
+      <!-- Здесь должна быть форма -->
+      <section class="catalog-filtres">
+        <h2 class="visually-hidden">Фильтры</h2>
         <!-- Здесь должна быть форма -->
-        <section class="catalog-filtres">
-<h2 class="visually-hidden">Фильтры</h2>
-<form class="sites-models" action="index.html" method="post">
-  <b><p class="sites-modles-grid">Сетка:</p></b>
-  <label>
-  <input class="sites-grid" type="radio" name="grid-option-1" value="Adaptive"
-  checked>
-  Адаптивная
-  </label><br>
-  <label>
-  <input class="sites-grid" type="radio" name="grid-option-1" value="Fixed">
-  Фиксированная
-  </label><br>
-  <label>
-  <input class="sites-grid" type="radio" name="grid-option-1" value="Rubber">
-  Резиновая
-  </label><br>
-<b><p class="sites-models-features">Особенности:</p></b>
-<label>
-  <input type="checkbox" name="features" value="slider" checked>Слайдер
-</label>
-<label><br>
-  <input type="checkbox" name="features"
-  value="Блок преимуществ">Блок преимуществ
-</label>
-<label><br>
-  <input type="checkbox" name="features" value="Новости" checked>Новости
-</label>
-<label><br>
-  <input type="checkbox" name="features" value="Галерея">Галерея
-</label>
-<label><br>
-  <input type="checkbox" name="features" value="Корзина">Корзина
-</label><br>
-<input type="submit" name="button-filtres-submit" value="Показать">
-</form>
-        </section>
-        <section class="catalog">
-<h2 class="visually-hidden">Список предложений</h2>
-<ul class="catalog-list">
-<li>
-  <article>
-    <h3>
-      <a href="catalog-item.html">
-        <span class="catalog-item-title">"Sedona"</span>
-      </a>
-      <span class="catalog-category">Информационный сайт для туристов</span>
-    </h3>
-  <p>
-    <img src="img/sedona.jpg" alt="Сайт-шабон «Sedona»" width="x" height="y">
-  </p>
-  <p class="catalog-item-price">
-    <a class="button" href="#"><b>9 900 РУБ.</b></a>
-  </p>
-  </article>
-</li>
-<li>
-  <article>
-    <h3>
-      <a href="catalog-item.html">
-        <span class="catalog-item-title">"Pink"</span>
-      </a>
-      <span class="catalog-category">Приложение для хорошего настроения</span>
-    </h3>
-  <p>
-    <img src="img/pink.jpg" alt="Сайт-шабон «Pink»" width="x" height="y">
-  </p>
-  <p class="catalog-item-price">
-    <a class="button" href="#"><b>11 900 РУБ.</b></a>
-  </p>
-  </article>
-</li>
-<li>
-  <article>
-    <h3>
-      <a href="catalog-item.html">
-        <span class="catalog-item-title">"Бородинский"</span>
-      </a>
-      <span class="catalog-category">Барбершоп сайт для стильных людей</span>
-    </h3>
-  <p>
-    <img src="img/borodshop.jpg" alt="Сайт-шаблон «Бородинский»" width="x" height="y">
-  </p>
-  <p class="catalog-item-price">
-    <a class="button" href="#"><b>10 900 РУБ.</b></a>
-  </p>
-  </article>
-</li>
-<li>
-  <article>
-    <h3>
-      <a href="catalog-item.html">
-        <span class="catalog-item-title">"Mishka"</span>
-      </a>
-      <span class="catalog-category">Творческий сайт товаров для дома ручной работы</span>
-    </h3>
-  <p>
-    <img src="img/mishka.jpg" alt="Сайт-шаблон «Mishka»" width="x" height="y">
-  </p>
-  <p class="catalog-item-price">
-    <a class="button" href="#"><b>14 900 РУБ.</b></a>
-  </p>
-  </article>
-</li>
-<li>
-  <article>
-    <h3>
-      <a href="catalog-item.html">
-        <span class="catalog-item-title">"A+"</span>
-      </a>
-      <span class="catalog-category">Обучающий сайт для будущих профессионалов</span>
-    </h3>
-  <p>
-    <img src="img/A+.jpg" alt="Сайт-шаблон «A+»" width="x" height="y">
-  </p>
-  <p class="catalog-item-price">
-    <a class="button" href="#"><b>15 900 РУБ.</b></a>
-  </p>
-  </article>
-</li>
-<li>
-  <article>
-    <h3>
-      <a href="catalog-item.html">
-        <span class="catalog-item-title">"Кваст"</span>
-      </a>
-      <span class="catalog-category">Сайт для настоящих ценителей кваса</span>
-    </h3>
-  <p>
-    <img src="img/kvast.jpg" alt="Сайт-шабон «Кваст»" width="x" height="y">
-  </p>
-  <p class="catalog-item-price">
-    <a class="button" href="#"><b>9 900 РУБ.</b></a>
-  </p>
-  </article>
-</li>
-</ul>
-        </section>
+      </section>
+      <section class="catalog">
+        <h2 class="visually-hidden">Список предложений</h2>
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <article>
+              <p>
+                <a href="catalog-item.html" class="catalog-item-title">
+                  "Sedona"
+                </a>
+                <p class="catalog-category">Информационный сайт для туристов</p>
+              </p>
+              <p>
+                <img src="img/sedona.jpg" alt="Сайт-шабон «Sedona»" width="200" height="100">
+              </p>
+              <p class="catalog-item-price">
+                <a class="button" href="#"><b>9 900 РУБ.</b></a>
+              </p>
+            </article>
+          </li>
+          <li class="catalog-item">
+            <article>
+              <p>
+                <a href="catalog-item.html" class="catalog-item-title">
+                  "Pink"
+                </a>
+                <p class="catalog-category">Приложение для хорошего настроения</p>
+              </p>
+              <p>
+                <img src="img/pink.jpg" alt="Сайт-шабон «Pink»" width="200" height="100">
+              </p>
+              <p class="catalog-item-price">
+                <a class="button" href="#"><b>11 900 РУБ.</b></a>
+              </p>
+            </article>
+          </li>
+          <li class="catalog-item">
+            <article>
+              <p>
+                <a href="catalog-item.html" class="catalog-item-title">
+                  "Бородинский"
+                </a>
+                <p class="catalog-category">Барбершоп сайт для стильных людей</p>
+              </p>
+              <p>
+                <img src="img/borodshop.jpg" alt="Сайт-шаблон «Бородинский»" width="200" height="100">
+              </p>
+              <p class="catalog-item-price">
+                <a class="button" href="#"><b>10 900 РУБ.</b></a>
+              </p>
+            </article>
+          </li>
+          <li class="catalog-item">
+            <article>
+              <p>
+                <a href="catalog-item.html" class="catalog-item-title">
+                  "Mishka"
+                </a>
+                <p class="catalog-category">Творческий сайт товаров для дома ручной работы</p>
+              </p>
+              <p>
+                <img src="img/mishka.jpg" alt="Сайт-шаблон «Mishka»" width="200" height="100">
+              </p>
+              <p class="catalog-item-price">
+                <a class="button" href="#"><b>14 900 РУБ.</b></a>
+              </p>
+            </article>
+          </li>
+          <li class="catalog-item">
+            <article>
+              <p>
+                <a href="catalog-item.html" class="catalog-item-title">
+                  "A+"
+                </a>
+                <p class="catalog-category">Обучающий сайт для будущих профессионалов</p>
+              </p>
+              <p>
+                <img src="img/A+.jpg" alt="Сайт-шаблон «A+»" width="200" height="100">
+              </p>
+              <p class="catalog-item-price">
+                <a class="button" href="#"><b>15 900 РУБ.</b></a>
+              </p>
+            </article>
+          </li>
+          <li class="catalog-item">
+            <article>
+              <p>
+                <a href="catalog-item.html"  class="catalog-item-title">
+                  "Кваст"
+                </a>
+                <p class="catalog-category">Сайт для настоящих ценителей кваса</p>
+              </p>
+              <p>
+                <img src="img/kvast.jpg" alt="Сайт-шабон «Кваст»" width="200" height="100">
+              </p>
+              <p class="catalog-item-price">
+                <a class="button" href="#"><b>9 900 РУБ.</b></a>
+              </p>
+            </article>
+          </li>
+        </ul>
+      </section>
     </main>
     <footer class="main-footer">
       <div class="social-footer">
@@ -171,10 +138,10 @@
           <li><a class="social-button" href="#">Инстаграм</a></li>
         </ul>
       </div>
-        <p>
-          <b>Давайте дружить, это выгодно!</b>
+      <p>
+        <b>Давайте дружить, это выгодно!</b>
         скидка 10% для друзей из социальных сетей.
-        </p>
+      </p>
     </footer>
   </body>
 </html>
