@@ -24,9 +24,61 @@
     <main class="container">
       <h1 class="catalog-welcome">Магазин готовых шаблонов</h1>
       <!-- Здесь должна быть форма -->
-      <section class="catalog-filtres">
+      <section class="catalog-filters">
         <h2 class="visually-hidden">Фильтры</h2>
-        <!-- Здесь должна быть форма -->
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset>
+            <legend>Сетка:</legend>
+            <ul>
+              <li class="filter-option">
+                <input type="radio" class="visually-hidden filter-input filter-input-radio" name="grid"
+                  id="filter-adaptive" checked>
+                <label for="filter-adaptive">Адаптивная</label>
+              </li>
+              <li class="filter-option">
+                <input type="radio" class="visually-hidden filter-input filter-input-radio" name="grid"
+                  id="filter-fixed">
+                <label for="filter-fixed">Фиксированная</label>
+              </li>
+              <li class="filter-option">
+                <input type="radio" class="visually-hidden filter-input filter-input-radio" name="grid"
+                  id="filter-rubber">
+                <label for="filter-rubber">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности</legend>
+            <ul>
+              <li class="filter-option">
+                <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="slider"
+                  id="filter-slider" checked>
+                <label for="filter-slider">Слайдер</label>
+              </li>
+              <li class="filter-option">
+                <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="privilege"
+                  id="filter-privilege">
+                <label for="filter-privilege">Блок преимуществ</label>
+              </li>
+              <li class="filter-option">
+                <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="news"
+                  id="filter-news" checked>
+                <label for="filter-news">Новости</label>
+              </li>
+              <li class="filter-option">
+                <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="gallery"
+                  id="filter-gallery">
+                <label for="filter-gallery">Галерея</label>
+              </li>
+              <li class="filter-option">
+                <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="basket"
+                  id="filter-basket">
+                <label for="filter-basket">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+         <button type="submit" class="filter-button button">Показать</button>
+        </form>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Список предложений</h2>
@@ -59,7 +111,7 @@
                 <img src="img/pink.jpg" alt="Сайт-шабон «Pink»" width="360" height="576">
               </p>
               <p class="catalog-item-price">
-                <a class="button" href="#"><b>11 900 РУБ.</b></a>
+                <a class="button" href="#"><b>9 900 РУБ.</b></a>
               </p>
             </article>
           </li>
@@ -75,7 +127,7 @@
                 <img src="img/barbershop.jpg" alt="Сайт-шаблон «Бородинский»" width="360" height="576">
               </p>
               <p class="catalog-item-price">
-                <a class="button" href="#"><b>10 900 РУБ.</b></a>
+                <a class="button" href="#"><b>9 900 РУБ.</b></a>
               </p>
             </article>
           </li>
@@ -91,7 +143,7 @@
                 <img src="img/mishka.jpg" alt="Сайт-шаблон «Mishka»" width="360" height="576">
               </p>
               <p class="catalog-item-price">
-                <a class="button" href="#"><b>14 900 РУБ.</b></a>
+                <a class="button" href="#"><b>9 900 РУБ.</b></a>
               </p>
             </article>
           </li>
@@ -107,7 +159,7 @@
                 <img src="img/aplus.jpg" alt="Сайт-шаблон «aplus»" width="360" height="576">
               </p>
               <p class="catalog-item-price">
-                <a class="button" href="#"><b>15 900 РУБ.</b></a>
+                <a class="button" href="#"><b>9 900 РУБ.</b></a>
               </p>
             </article>
           </li>
@@ -143,5 +195,25 @@
         скидка 10% для друзей из социальных сетей.
       </p>
     </footer>
+    <section class="modal-write-us">
+      <h2>Напишите нам<h2>
+      <form class="write-us-form" action="https://htmlacademy.ru" method="post">
+        <p>
+          <label for="write-us-name">Ваше имя</label>
+          <input type="text" class="write-us-name" name="name" placeholder="Имя Фамилия" id="write-us-name">
+        </p>
+        <p>
+          <label for="write-us-email">Ваш e-mail:</label>
+          <input type="text" class="write-us-email" name="email" placeholder="email@example.com" id="write-us-email">
+        </p>
+        <p>
+          <label for="letter-content">Текст письма</label>
+          <textarea class="letter-content" rows="4" placeholder="В свободно форме" id="letter-content">
+          </textarea>
+        </p>
+        <button type="submit" class="button">Отправить</button>
+        <button class="modal-close">Закрыть</button>
+      </form>
+    </section>
   </body>
 </html>
