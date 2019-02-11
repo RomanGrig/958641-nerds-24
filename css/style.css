@@ -42,6 +42,37 @@ body {
   background-color: #eeeeee;
 }
 
+.catalog-welcome {
+  font-size: 55px;
+  line-height: 55px;
+  text-align: center;
+}
+
+.filter-form ul {
+  list-style: none;
+}
+
+.filter-option label {
+  color: #b8b8b8;
+  line-height: 20px;
+}
+
+.filter-option label:hover,
+.filter-option label:focus {
+  color: #4d4d4d;
+  line-height: 20px;
+}
+
+.filter-option label:active{
+  color: #ededed;
+}
+
+.filter-grid-title,
+.filter-advantages-title{
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
 .services ul{
   list-style: none;
 }
