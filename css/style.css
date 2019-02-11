@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.site-navigation a,
+.basket {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.basket:hover,
+.site-navigation a:focus,
+.basket:focus {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fb565a;
+}
+
+.site-navigation a:active,
+.basket:active {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #bcbcbc;
+}
+
+.main-navigation ul {
+  list-style: none;
+
+}
+
+.main-header {
+  background-color: #eeeeee;
+}
+
+.services ul{
+  list-style: none;
+}
+
+.services-list h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.services-list p{
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.button-1{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #fb565a;
+  border: none;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #e74246;
+}
+
+.button-1:active {
+  color: #e38486;
+  background-color: #d7373b;
+  box-shadow: inset 0 3px 0 0 #c13135;
+}
+
+.button-2{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #00ca74;
+}
+
+.button-2:hover,
+.button-2:focus {
+  background-color: #00bc6c;
+}
+
+.button-2:active {
+  color: #74c69a;
+  background-color: #00aa62;
+  box-shadow: inset 0 3px 0 0 #009958;
+}
+
+.button-3{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #efc84a;
+}
+
+.button-3:hover,
+.button-3:focus {
+  background-color: #eab534;
+}
+
+.button-3:active {
+  color: #edc47c;
+  background-color: #e5a722;
+  box-shadow: inset 0 3px 0 0 #ce961f;
+}
+
+.social-footer ul{
+  list-style: none;
+}
+
+.social-button {
+  color: #ffffff;
+  background-color: #e1e1e1;
+  text-decoration: none;
+}
+
+.social-button:hover,
+.social-button:focus {
+  color: #ffffff;
+  background-color: #e74246;
+  text-decoration: none;
+}
+
+.social-button:active {
+  color: #e37376;
+  background-color: #d7373b;
+  text-decoration: none;
+}
+
+.main-footer b {
+  text-align: center;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.fix-price {
+  font-weight: 400;
+  line-height: 22px;
+  color: #444444;
+}
+
+.write-us-name {
+  line-height: 18px;
+}
+
+.modal-write-us h2 {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.write-us-form label {
+  line-height: 18px;
+  font-weight: bold;
+}
