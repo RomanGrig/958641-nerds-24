@@ -10,6 +10,49 @@ body {
   background-color: #ffffff;
 }
 
+.main-header {
+  width: 100%;
+  background-color: #eeeeee;
+  padding-top: 50px;
+  padding-bottom: 85px;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main-navigation .container {
+  display: flex;
+}
+
+.main-header-logo {
+  height: 65px;
+  width: 160px;
+  margin-right: 200px;
+}
+
+.site-navigation {
+  width: 600px;
+}
+
+.site-navigation li {
+  display: inline;
+}
+
+.user-navigation {
+  width: 160px;
+  margin-left: auto;
+}
+
+.site-navigation,
+.user-navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .site-navigation a,
 .basket {
   text-decoration: none;
@@ -33,19 +76,22 @@ body {
   color: #bcbcbc;
 }
 
-.main-navigation ul {
-  list-style: none;
-
-}
-
-.main-header {
-  background-color: #eeeeee;
-}
-
 .catalog-welcome {
+  margin: 0;
+  padding-bottom: 120px;
   font-size: 55px;
   line-height: 55px;
   text-align: center;
+  background-color: #eeeeee;
+}
+
+.flex-catalog {
+  display: flex;
+}
+
+.catalog-filters {
+  width: 260px;
+  margin-right: 140px;
 }
 
 .filter-form ul {
@@ -73,8 +119,46 @@ body {
   font-size: 18px;
 }
 
-.services ul {
+.catalog {
+  width: 760px;
+  display: flex;
+}
+
+.catalog-list {
+  padding: 0;
+  margin: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog-item {
+  width: 360px;
+  margin-right: 40px;
+}
+
+.catalog-item:nth-child(even) {
+  margin-right: 0;
+}
+
+.services ul {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 100px;
+  list-style: none;
+}
+
+.services-list {
+  display: flex;
+}
+
+ .services-item {
+   width: 300px;
+   margin-right: 100px;
+ }
+
+.services-item:last-child {
+  margin-right: none;
 }
 
 .services-list h3 {
@@ -88,8 +172,11 @@ body {
 }
 
 .button {
+  width: 80px;
+  padding: 16px 40px;
   text-decoration: none;
   text-transform: uppercase;
+  line-height: 18px;
 }
 
 .button-1 {
@@ -141,8 +228,23 @@ body {
   box-shadow: inset 0 3px 0 0 #ce961f;
 }
 
-.social-footer ul {
+.main-footer .container {
+  display: flex;
+}
+
+.social-footer {
+  width: 260px;
+  margin-right: 140px;
+}
+
+.social-footer .social-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.main-footer p {
+  width: 560px;
 }
 
 .social-button {

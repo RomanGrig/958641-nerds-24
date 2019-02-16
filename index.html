@@ -11,58 +11,62 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img src="img/index-logo.svg" alt="Логотип «Нёрдс»" width="100" height="100">
-        </a>
-        <ul class="site-navigation">
-          <li><a href="index.html">Студия</a></li>
-          <li><a href="customers.html">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-        <ul class="user-navigation">
-          <li class="basket">Корзина</li>
-        </ul>
+        <div class="container">
+          <a class="main-header-logo" href="index.html">
+            <img src="img/index-logo.svg" alt="Логотип «Нёрдс»" width="160" height="65">
+          </a>
+          <ul class="site-navigation">
+            <li><a href="index.html">Студия</a></li>
+            <li><a href="customers.html">Клиенты</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+          <ul class="user-navigation">
+            <li class="basket">Корзина</li>
+          </ul>
+        </div>
       </nav>
     </header>
-    <main class="main-container">
+    <main class="container">
       <h1 class="visually-hidden">Дизайн студия «Нердс»</h1>
       <section class="services">
         <h2 class="visually-hidden">Услуги</h2>
         <ul class="services-list">
-          <li>
+          <li class="services-item">
             <img src="img/sites.png" alt="Сайты" width="300" height="146">
             <h3>Веб сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
             <a class="button button-1" href="#">Заказать</a>
           </li>
-          <li>
+          <li class="services-item">
             <img src="img/apps.png" alt="Приложения" width="300" height="146">
             <h3>Приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
             <a class="button button-2" href="#">Заказать</a>
           </li>
-          <li>
+          <li class="services-item">
             <img src="img/presentations.png" alt="Презентации" width="300" height="146">
             <h3>Презентации</h3>
-            <p>Вы даже не подозреваете на сколько вы изумительны!</p>
+            <p>Вы даже не подозреваете насколько вы изумительны!</p>
             <a class="button button-3" href="#">Заказать</a>
           </li>
         </ul>
       </section>
     </main>
     <footer class="main-footer">
-      <div class="social-footer">
-        <ul class="social-list">
-          <li><a class="button social-button" href="#">Вконтакте</a></li>
-          <li><a class="button social-button" href="#">Фейсбук</a></li>
-          <li><a class="button social-button" href="#">Инстаграм</a></li>
-        </ul>
+      <div class="container">
+        <div class="social-footer">
+          <ul class="social-list">
+            <li><a class="button social-button" href="#">Вконтакте</a></li>
+            <li><a class="button social-button" href="#">Фейсбук</a></li>
+            <li><a class="button social-button" href="#">Инстаграм</a></li>
+          </ul>
+        </div>
+        <p>
+          <b>Давайте дружить, это выгодно!</b>
+          <span class="fix-price">скидка 10% для друзей из социальных сетей.</span>
+        </p>
       </div>
-      <p>
-        <b>Давайте дружить, это выгодно!</b>
-        <span class="fix-price">скидка 10% для друзей из социальных сетей.</span>
-      </p>
     </footer>
     <section class="modal-write-us">
       <h2>Напишите нам</h2>
