@@ -38,10 +38,83 @@ input[type="radio"].visually-hidden {
   background-color: #eeeeee;
 }
 
-.container {
+.container,
+.slider {
   width: 1160px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.slider {
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.slider-inner {
+  overflow: hidden;
+}
+
+.slider-slides {
+  width: 300%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-slides section {
+    width: 1160px;
+}
+
+.slider input[type="radio"] {
+  display: none;
+}
+
+section[class^="slide-"] p:first-child {
+  font-size: 55px;
+  line-height: 55px;
+  margin: 0;
+  margin-bottom: 40px;
+  margin-top: 70px;
+}
+
+section[class^="slide-"] p:last-of-type {
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+section[class^="slide-"] div:first-child {
+  width: 380px;
+  float: left;
+  text-align: left;
+}
+
+.slide-1 div:first-child {
+  margin-right: 55px;
+}
+
+
+.slide-2 p:first-child {
+  width: 530px;
+}
+
+.slide-2 div:first-child {
+  margin-right: 110px;
+}
+
+.slide-3 p:first-child {
+  width: 410px;
+}
+
+.slide-3 p:last-of-type {
+  width: 350px;
+}
+
+.slide-3 div:first-child {
+  margin-right: 20px;
+}
+
+section[class^="slide"] .slide-button {
+  width: 260px;
 }
 
 .main-navigation .container {
