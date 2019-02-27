@@ -67,6 +67,42 @@ input[type="radio"].visually-hidden {
 .slider input[type="radio"] {
   display: none;
 }
+.slider-controls {
+  position: absolute;
+  left: 50%;
+  bottom: 104px;
+  z-index: 100;
+
+  width: 160px;
+  height: 18px;
+
+  text-align: center;
+  font-size: 0;
+  transform: translateX(-50%);
+}
+.slider-controls  label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.slider-controls  label::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  width:18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.slide-1 {
+  background: url("../img/slide1.png") no-repeat 100% 0;
+}
 
 section[class^="slide-"] p:first-child {
   font-size: 55px;
