@@ -46,6 +46,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slider {
+  padding-top: 10px;
   margin-bottom: 80px;
 }
 
@@ -54,30 +55,15 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
-.slider-controls {
-  position: absolute;
-  top: 305px;
-  left: 555px;
-}
-
-.slider-controls label {
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  margin: 0 8px;
-  border-radius: 50%;
-  background-color: #ffffff;
-}
-
 .slider-inner {
   overflow: hidden;
-  height: 413px;
 }
 
 .slider-slides {
   width: 300%;
   display: flex;
   justify-content: space-between;
+  transition: 0.8s;
 }
 
 .slider-slides section {
@@ -87,6 +73,7 @@ input[type="radio"].visually-hidden {
 .slider input[type="radio"] {
   display: none;
 }
+
 .slider-controls {
   position: absolute;
   left: 50%;
@@ -100,6 +87,7 @@ input[type="radio"].visually-hidden {
   font-size: 0;
   transform: translateX(-50%);
 }
+
 .slider-controls  label {
   position: relative;
   display: inline-block;
@@ -108,9 +96,10 @@ input[type="radio"].visually-hidden {
   height: 18px;
   border-radius: 50%;
   padding: 8px;
+
 }
 
-.slider-controls  label::after {
+.slider-controls  label::before {
   content: "";
   position: absolute;
   left: 8px;
@@ -120,22 +109,71 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
+.slider-controls  label::after {
+  content: "";
+  position: absolute;
+  left: 13px;
+  top: 13px;
+  width:4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #ffffff;
+
+  z-index: 5;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"]::after{
+  border: 2px solid #c1c1c1;
+
+}
+
+#btn-2:checked ~ .slider-controls label[for="btn-2"]::after{
+  border: 2px solid #c1c1c1;
+}
+
+#btn-3:checked ~ .slider-controls label[for="btn-3"]::after{
+  border: 2px solid #c1c1c1;
+}
+
+#btn-1:checked ~ .slider-inner .slider-slides {
+  transform: translateX(0);
+}
+
+#btn-2:checked ~ .slider-inner .slider-slides {
+  transform: translateX(-1160px);
+}
+
+#btn-3:checked ~ .slider-inner .slider-slides {
+  transform: translateX(-2320px);
+}
+
 .slide-1 {
-  background: url("../img/slide1.png") no-repeat 100% 0;
+  min-height: 413px;
+  background: url("../img/slide1.png") no-repeat 88% 0;
+}
+
+.slide-2 {
+  min-height: 413px;
+  background: url("../img/slide2.png") no-repeat 100% 0;
+}
+
+.slide-3 {
+  min-height: 413px;
+  background: url("../img/slide3.png") no-repeat 100% 0;
 }
 
 section[class^="slide-"] p:first-child {
   font-size: 55px;
   line-height: 55px;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   margin-top: 70px;
 }
 
 section[class^="slide-"] p:last-of-type {
   line-height: 24px;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 section[class^="slide-"] div:first-child {
@@ -144,7 +182,7 @@ section[class^="slide-"] div:first-child {
   text-align: left;
 }
 
-.slide-1 div:first-child {
+.slide-1 div {
   margin-right: 55px;
 }
 
@@ -170,6 +208,7 @@ section[class^="slide-"] div:first-child {
 
 section[class^="slide"] .slide-button {
   width: 260px;
+  margin-bottom: 80px;
 }
 
 .main-navigation .container {
@@ -262,7 +301,7 @@ section[class^="slide"] .slide-button {
   content: "";
   position: absolute;
 
-  top: 92px;
+  top: 78px;
   left: 45px;
   width: 17px;
   height: 17px;
@@ -473,8 +512,9 @@ section[class^="slide"] .slide-button {
   display: flex;
   padding: 0;
   margin: 0;
-  margin-bottom: 100px;
+  padding-bottom: 80px;
   list-style: none;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .services-item {
@@ -583,6 +623,40 @@ section[class^="slide"] .slide-button {
   box-shadow: inset 0 3px 0 0 #ce961f;
 }
 
+.about-us {
+  display: flex;
+  padding-top: 80px;
+}
+
+.description {
+  font-size: 45px;
+  line-height: 45px;
+  margin-bottom: 40px;
+}
+
+.about-us-profit  p:nth-child(3) {
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+
+.about-us-profit  p:nth-child(4) {
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-bottom: 35px;
+}
+
+.about-us .orders {
+  list-style: none;
+}
+
+.orders li {
+  margin-bottom: 25px;
+}
+
+.about-us-statistic {
+  min-height: 52%;
+  margin-top: 210px;
+}
 .main-footer .container {
   display: flex;
 }
