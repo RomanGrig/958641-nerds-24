@@ -29,10 +29,27 @@
     </header>
     <h1 class="catalog-welcome">Магазин готовых шаблонов</h1>
     <main class="container">
-            <!-- Здесь должна быть форма -->
       <h2 class="visually-hidden">Список предложений</h2>
       <div class="flex-catalog">
         <section class="catalog-filters">
+          <form class="price-filter" method="get" action="https://echo.htmlacademy.ru">
+            <fieldset class="filter-item">
+              <legend>Стоимость:</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                  <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                </div>
+              </div>
+            </fieldset>
+          </form>
           <h2 class="visually-hidden">Фильтры</h2>
           <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="filter-grid">
@@ -89,6 +106,14 @@
           </form>
         </section>
         <section class="catalog">
+          <div class="sort">
+            <span>Сортировка:</span>
+            <a href="#">по цене</a>
+            <a href="#">по типу</a>
+            <a href="#">по названию</a>
+            <a class="arrow arrow-down" href="#">по убыванию</a>
+            <a class="arrow arrow-up" href="#">по возрастанию</a>
+          </div>
           <ul class="catalog-list">
             <li class="catalog-item">
               <article>
@@ -199,11 +224,27 @@
                 </div>
               </article>
             </li>
-          </ul>
         </section>
+      </ul>
+      </div>
+      <div class="pagination-list">
+        <a class="pagination-current">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a class="button" href="#next">Следующая</a>
       </div>
     </main>
     <footer class="main-footer">
+      <section class="find-us">
+        <div class="map">
+          <div class="contacts">
+            <p>NЁRDS DESIGN STUDIO</p>
+            <p>191186, Санкт-Петербург,<br>  ул. Б. Конюшенная, д. 19/8</p>
+            <p>тел. +7 (812) 275-75-75</p>
+            <a class="button button-1 write-button" href="#">Напишите нам</a>
+          </div>
+        </div>
+      </section>
       <div class="container">
         <div class="social-footer">
           <ul class="social-list">
