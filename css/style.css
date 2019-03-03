@@ -46,7 +46,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slider {
-  padding-top: 10px;
+  padding: 10px 0px 0px 0px;
   margin-bottom: 80px;
 }
 
@@ -149,7 +149,7 @@ input[type="radio"].visually-hidden {
 
 .slide-1 {
   min-height: 413px;
-  background: url("../img/slide1.png") no-repeat 88% 0;
+  background: url("../img/slide1.png") no-repeat 431px 8px;
 }
 
 .slide-2 {
@@ -166,24 +166,20 @@ section[class^="slide-"] p:first-child {
   font-size: 55px;
   line-height: 55px;
   margin: 0;
-  margin-bottom: 25px;
-  margin-top: 70px;
+  margin-bottom: 26px;
+  margin-top: 67px;
 }
 
 section[class^="slide-"] p:last-of-type {
   line-height: 24px;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 section[class^="slide-"] div:first-child {
   width: 380px;
   float: left;
   text-align: left;
-}
-
-.slide-1 div {
-  margin-right: 55px;
 }
 
 .slide-2 p:first-child {
@@ -207,7 +203,7 @@ section[class^="slide-"] div:first-child {
 }
 
 section[class^="slide"] .slide-button {
-  width: 260px;
+  width: 240px;
   margin-bottom: 80px;
 }
 
@@ -220,7 +216,7 @@ section[class^="slide"] .slide-button {
   height: 65px;
   width: 160px;
   padding-top: 50px;
-  margin-right: 200px;
+  margin-right: 163px;
 }
 
 .main-header-logo:hover,
@@ -257,13 +253,16 @@ section[class^="slide"] .slide-button {
 
 .site-navigation a,
 .user-navigation a {
-  padding: 70px 0px 10px;
+  padding: 76px 0px 5px;
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
-  margin-right: 25px;
+  margin-right: 45px;
 }
 
+.site-navigation li:nth-child(2) a {
+  margin-right: 48px;
+}
 .site-navigation a:hover,
 .user-navigation a:hover,
 .site-navigation a:focus,
@@ -294,14 +293,14 @@ section[class^="slide"] .slide-button {
 }
 
 .user-navigation .basket {
-  padding-left: 80px;
+  padding-left: 85px;
 }
 
 .user-navigation .basket::before {
   content: "";
   position: absolute;
 
-  top: 78px;
+  top: 83px;
   left: 45px;
   width: 17px;
   height: 17px;
@@ -682,13 +681,14 @@ a.arrow {
 }
 
 .services-list h3 {
-
+  margin: 0;
+  padding: 15px 0px 0px 0px;
   font-size: 24px;
   text-transform: uppercase;
 }
 
 .services-list p {
-  margin-bottom: 35px;
+  margin-bottom: 31px;
   line-height: 24px;
   font-weight: 400;
 }
@@ -696,13 +696,13 @@ a.arrow {
 .button {
   display: block;
   width: 160px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  height: 50px;
+  vertical-align: middle;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  line-height: 18px;
-  border-radius: 5px;
+  line-height: 50px;
+  border-radius: 3px;
 }
 
 .filter-button {
@@ -780,7 +780,7 @@ a.arrow {
 
 .about-us {
   display: flex;
-  padding-top: 80px;
+  padding-top: 74px;
   padding-bottom: 50px;
   border-bottom: 2px solid #eeeeee;
 }
@@ -788,16 +788,17 @@ a.arrow {
 .description {
   font-size: 45px;
   line-height: 45px;
-  margin-bottom: 40px;
+  margin-bottom: 33px;
 }
 
 .about-us-profit {
+  min-width: 657px;
   margin-right: 140px;
 }
 
 .about-us-profit  p:nth-child(3) {
   line-height: 24px;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
 }
 
 .about-us-profit  p:nth-child(4) {
@@ -811,7 +812,7 @@ a.arrow {
 
 .orders li,
 .about-us-profit  p:nth-child(4) {
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 
 .orders li {
@@ -836,8 +837,8 @@ a.arrow {
   text-transform: uppercase;
 }
 
-.about-us-statistic + span {
-  margin-left: 15px;
+.about-us-statistic>span {
+  margin-left: 19px;
   font-weight: bolder;
 }
 
@@ -848,51 +849,93 @@ a.arrow {
   background-repeat: no-repeat;
   width: 360px;
   height: 208px;
-  top: -40px;
+  top: -35px;
 }
 
 .partners {
   display: flex;
-  min-height: 180px;
-  justify-content: space-around;
-  align-items: center;
+  height: 180px;
   border-bottom: 2px solid #eeeeee;
   margin-bottom: 80px;
 }
 
-.partners div:hover,
-.partners div:focus {
-  opacity: 0.2  ;
+.partners a {
+  position: relative;
+  display: inline-block;
+  opacity: .2;
 }
 
-.partners div:active {
+.partners a:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  height: 52px;
+  border-right: 2px solid #eeeeee;
+
+}
+
+.partners a:nth-child(1)::after {
+  top: 3px;
+  right: -51px;
+  opacity: 1;
+}
+
+.partners a:nth-child(2)::after {
+  top: 17px;
+  right: -46px;
+  opacity: 1;
+}
+
+.partners a:nth-child(3)::after {
+  top: -1px;
+  right: -58px;
+  opacity: 1;
+}
+
+.partners a:hover,
+.partners a:focus {
+  opacity: 1;
+}
+
+.partners a:active {
   opacity: 0.1  ;
 }
 
-.partners div:nth-child(1) {
+.partners a:nth-child(1) {
   width: 199px;
   height: 68px;
+  margin-top: auto;
+  margin-bottom: 50px;
+  margin-left: 30px;
   background-image: url("../img/partner-logo-1.png");
   background-repeat: no-repeat;
 }
 
-.partners div:nth-child(2) {
+.partners a:nth-child(2) {
   width: 209px;
   height: 90px;
+  margin-top: auto;
+  margin-bottom: 42px;
+  margin-left: 97px;
   background-image: url("../img/partner-logo-2.png");
   background-repeat: no-repeat;
 }
 
-.partners div:nth-child(3) {
+.partners a:nth-child(3) {
   width: 185px;
   height: 52px;
+  margin-top: auto;
+  margin-bottom: 62px;
+  margin-left: 103px;
   background-image: url("../img/partner-logo-3.png");
   background-repeat: no-repeat;
 }
 
-.partners div:nth-child(4) {
+.partners a:nth-child(4) {
   width: 173px;
   height: 84px;
+  margin-top: auto;
+  margin-bottom: 43px;
+  margin-left: 121px;
   background-image: url("../img/partner-logo-4.png");
   background-repeat: no-repeat;
 }
@@ -900,43 +943,24 @@ a.arrow {
 
 
 .statistic-list {
-  list-style: none;
-  display: flex;
-  padding: 0;
-  margin: 0;
-  margin-top: 50px;
+  margin-top: 40px;
   font-size: 45px;
   line-height: 10px;
   font-weight: bold;
 }
 
-.statistic-list li {
-  margin-right: 20px;
-  position: relative;
-  width: 100px;
-}
-
-.statistic-list li::after {
-  display: block;
-  position: absolute;
+.statistic-list .row-2 {
   font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
+  font-weight: 400;
   text-transform: none;
-  text-align: justify;
-  top: 50px;
 }
 
-.statistic-list li:first-child::after {
-  content: "Уровень самоотдачи";
+.row-2 td {
+  padding-top: 35px;
+  line-height: 15px;
 }
-
-.statistic-list li:nth-child(2)::after {
-  content: "Соблюдение  сроков";
-}
-
-.statistic-list li:nth-child(3)::after {
-  content: "Минимальная предоплата";
+.row-1 td {
+  padding-right: 20px;
 }
 
 .statistic-list .sup {
