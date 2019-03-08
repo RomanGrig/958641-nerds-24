@@ -5,7 +5,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 30px;
-  font-weight: 500;
+  font-weight: 400;
   color: #000000;
   background-color: #ffffff;
 }
@@ -168,6 +168,7 @@ section[class^="slide-"] p:first-child {
   margin: 0;
   margin-bottom: 26px;
   margin-top: 67px;
+  font-weight: 500;
 }
 
 section[class^="slide-"] p:last-of-type {
@@ -253,7 +254,7 @@ section[class^="slide"] .slide-button {
 
 .site-navigation a,
 .user-navigation a {
-  padding: 76px 0px 5px;
+  padding: 76px 0px 2px;
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
@@ -313,8 +314,8 @@ section[class^="slide"] .slide-button {
 
 .catalog-welcome {
   margin: 0;
-  margin-bottom: 60px;
-  padding-top: 65px;
+  margin-bottom: 50px;
+  padding-top: 77px;
   padding-bottom: 110px;
   font-size: 55px;
   line-height: 55px;
@@ -328,7 +329,7 @@ section[class^="slide"] .slide-button {
 
 .range-filter {
   width: 260px;
-  margin-top: 49px;
+  margin-top: 37px;
 }
 
 .filter-item legend {
@@ -422,13 +423,18 @@ section[class^="slide"] .slide-button {
   border: none;
   margin: 0;
   padding: 0;
+  margin-top: 6px;
+  margin-bottom: 53px;
+}
 
-  margin-bottom: 35px;
+.filter-form .filter-grid,
+.filter-form .filter-advantages {
+  margin-bottom: 25px;
 }
 
 .catalog-filters legend {
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .filter-form ul {
@@ -447,8 +453,8 @@ section[class^="slide"] .slide-button {
 
 .filter-option {
   line-height: 20px;
-  margin-bottom: 25px;
-  padding-left: 40px;
+  margin-bottom: 20px;
+  padding-left: 38px;
 }
 
 
@@ -536,12 +542,12 @@ section[class^="slide"] .slide-button {
 }
 
 .sort span {
-  margin-right: 272px;
+  margin-right: 265px;
 }
 
 .sort a {
   text-transform: uppercase;
-  margin-right: 18px;
+  margin-right: 21px;
   text-decoration: none;
   font-size: 14px;
   color: #000000;
@@ -578,15 +584,14 @@ section[class^="slide"] .slide-button {
 a.arrow {
   display: inline-block;
   font-size: 0;
+  margin-right: 12px;
 }
 
 .arrow-up::before {
-  transform: translateY(-2px);
   border-top-width: 0;
 }
 
 .arrow-down::before {
-  transform: translateY(2px);
   border-bottom-width: 0;
 }
 
@@ -606,7 +611,7 @@ a.arrow {
 
 .catalog-item:nth-last-child(1),
 .catalog-item:nth-last-child(2) {
-  margin-bottom: 55px;
+  margin-bottom: 47px;
 }
 
 .catalog-item::before {
@@ -789,11 +794,13 @@ a.arrow {
   font-size: 45px;
   line-height: 45px;
   margin-bottom: 33px;
+  font-weight: 500;
 }
 
 .about-us-profit {
   min-width: 657px;
   margin-right: 140px;
+  font-weight: 400;
 }
 
 .about-us-profit  p:nth-child(3) {
@@ -808,6 +815,7 @@ a.arrow {
 
 .about-us .orders {
   list-style: none;
+
 }
 
 .orders li,
@@ -849,7 +857,8 @@ a.arrow {
   background-repeat: no-repeat;
   width: 360px;
   height: 208px;
-  top: -35px;
+  top: -34px;
+  left: 3px;
 }
 
 .partners {
@@ -946,7 +955,7 @@ a.arrow {
 
 .row-2 td {
   padding-top: 35px;
-  line-height: 15px;
+  line-height: 18px;
 }
 .row-1 td {
   padding-right: 20px;
@@ -956,6 +965,9 @@ a.arrow {
   font-size: 25px;
   vertical-align: super;
   font-weight: 700;
+}
+.main-footer {
+  position: relative;
 }
 
 .find-us {
@@ -982,18 +994,37 @@ a.arrow {
 }
 
 .contacts {
-  width: 220px;
-  height: 210px;
-  padding: 24px 50px 70px 50px;
+  width: 219px;
+  height: 207px;
+  padding: 32px 50px 70px 50px;
   position: absolute;
   background-color: #ffffff;
   top: 55px;
   left: 370px;
 }
 
+.contacts p:first-child {
+  width: 560px;
+  font-size: 18px;
+  margin-bottom: 21px;
+  font-weight: 500;
+}
+
 .contacts p:nth-child(2),
+.contacts p:nth-child(3),
+.contacts p:nth-child(4) {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  line-height: 19px;
+}
+
 .contacts p:nth-child(3) {
-  font-weight: 400;
+  margin-bottom: 17px;
+}
+
+.contacts p:nth-child(4) {
+  margin-bottom: 37px;
 }
 
 .find-us .write-button {
@@ -1011,13 +1042,14 @@ a.arrow {
 
 .pagination-list {
   margin-left: 400px;
-  margin-bottom: 60px;
+  margin-bottom: 59px;
 }
 
 .pagination-list a {
   text-decoration: none;
   display: inline-block;
   padding-top: 13px;
+  margin-right: 6px;
   width: 44px;
   height: 31px;
   border: 3px solid #eeeeee;
@@ -1052,10 +1084,6 @@ a.arrow {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.main-footer p {
-  width: 560px;
 }
 
 .social-list {
@@ -1093,25 +1121,33 @@ a.arrow {
 
 }
 
-.main-footer b {
+.friendship b {
+  display: block;
   text-align: center;
   font-size: 36px;
   line-height: 36px;
+  margin-top: 8px;
+  margin-bottom: 4px;
 }
 
 .fix-price {
-  font-weight: 400;
   line-height: 22px;
   color: #444444;
 }
 
 .modal-write-us {
+  position: absolute;
   width: 760px;
   height: 430px;
   margin: 100px auto;
   padding: 80px 100px;
-  box-shadow: 0 20px 40px 0px rgba(0,0,0,0.75)
-
+  background-color: #ffffff;
+  box-shadow: 0 20px 40px 0px rgba(0,0,0,0.75);
+  margin: auto;
+  top: 0;
+  left: 0px;
+  right: 0;
+  bottom: 220px;
 }
 
 .modal-write-us h2 {

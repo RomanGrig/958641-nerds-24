@@ -107,7 +107,7 @@
         </section>
         <section class="catalog">
           <div class="sort">
-            <span>Сортировка:</span>
+            <span>Сортировать:</span>
             <a href="#">по цене</a>
             <a href="#">по типу</a>
             <a href="#">по названию</a>
@@ -239,7 +239,8 @@
         <div class="map">
           <div class="contacts">
             <p>NЁRDS DESIGN STUDIO</p>
-            <p>191186, Санкт-Петербург,<br>  ул. Б. Конюшенная, д. 19/8</p>
+            <p>191186, Санкт-Петербург,</p>
+            <p>ул. Б. Конюшенная, д. 19/8</p>
             <p>тел. +7 (812) 275-75-75</p>
             <a class="button button-1 write-button" href="#">Напишите нам</a>
           </div>
@@ -285,31 +286,31 @@
             </li>
           </ul>
         </div>
-        <p>
+        <div class="friendship">
           <b>Давайте дружить, это выгодно!</b>
           <span class="fix-price">скидка 10% для друзей из социальных сетей.</span>
-        </p>
+        </div>
       </div>
+      <section class="modal-write-us visually-hidden">
+        <h2>Напишите нам</h2>
+        <form class="write-us-form" action="https://htmlacademy.ru" method="post">
+          <div>
+            <label for="write-us-name">Ваше имя:</label>
+            <input type="text" class="write-us-name" name="name" placeholder="Имя Фамилия" id="write-us-name">
+          </div>
+          <div>
+            <label for="write-us-email">Ваш e-mail:</label>
+            <input type="text" class="write-us-email" name="email" placeholder="email@example.com" id="write-us-email">
+          </div>
+          <div>
+            <label for="letter-content">Текст письма:</label>
+            <textarea class="letter-content" rows="4" placeholder="В свободной форме" id="letter-content"></textarea>
+          </div>
+          <button type="submit" class="button button-1">Отправить</button>
+          <button class="modal-close"><span class="visually-hidden">Закрыть</span>
+          </button>
+        </form>
+      </section>
     </footer>
-    <section class="modal-write-us">
-      <h2>Напишите нам</h2>
-      <form class="write-us-form" action="https://htmlacademy.ru" method="post">
-        <div>
-          <label for="write-us-name">Ваше имя:</label>
-          <input type="text" class="write-us-name" name="name" placeholder="Имя Фамилия" id="write-us-name">
-        </div>
-        <div>
-          <label for="write-us-email">Ваш e-mail:</label>
-          <input type="text" class="write-us-email" name="email" placeholder="email@example.com" id="write-us-email">
-        </div>
-        <div>
-          <label for="letter-content">Текст письма:</label>
-          <textarea class="letter-content" rows="4" placeholder="В свободной форме" id="letter-content"></textarea>
-        </div>
-        <button type="submit" class="button button-1">Отправить</button>
-        <button class="modal-close"><span class="visually-hidden">Закрыть</span>
-        </button>
-      </form>
-    </section>
   </body>
 </html>
