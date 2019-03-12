@@ -898,22 +898,22 @@ a.arrow {
   border-right: 2px solid #eeeeee;
 }
 
-.partners a:nth-child(1) {
+.partners a:nth-child(2) {
  margin-left: 31px;
  margin-top: 62px;
 }
 
-.partners a:nth-child(2) {
+.partners a:nth-child(3) {
   margin-left: 96px;
   margin-top: 46px;
 }
 
-.partners a:nth-child(3) {
+.partners a:nth-child(4) {
   margin-left: 103px;
   margin-top: 65px;
 }
 
-.partners a:nth-child(4) {
+.partners a:nth-child(5) {
   margin-left: 121px;
   margin-top: 52px;
 }
