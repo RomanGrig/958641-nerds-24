@@ -918,17 +918,17 @@ a.arrow {
   margin-top: 52px;
 }
 
-.partners a:nth-child(1)::after {
+.partners a:nth-child(2)::after {
   top: 2px;
   left: 248px;
 }
 
-.partners a:nth-child(2)::after {
+.partners a:nth-child(3)::after {
   top: 18px;
   left: 253px;
 }
 
-.partners a:nth-child(3)::after {
+.partners a:nth-child(4)::after {
   top: -1px;
   left: 241px;
 }
