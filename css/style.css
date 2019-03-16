@@ -10,10 +10,7 @@ body {
   background-color: #ffffff;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
+
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -869,6 +866,8 @@ a.arrow {
 
 .partners {
    display: flex;
+   justify-content: space-between;
+   align-items: center;
    height: 180px;
    border-bottom: 2px solid #eeeeee;
    margin-bottom: 80px;
@@ -876,6 +875,7 @@ a.arrow {
 
 .partners a {
    position: relative;
+   margin-top: 11px;
 }
 
 .partners img {
@@ -894,43 +894,18 @@ a.arrow {
 .partners a:not(:last-child)::after {
   content: "";
   position: absolute;
+  width: 255px;
   height: 52px;
   border-right: 2px solid #eeeeee;
 }
 
 .partners a:nth-child(2) {
- margin-left: 31px;
- margin-top: 62px;
+  margin-left: 2px;
 }
 
-.partners a:nth-child(3) {
-  margin-left: 96px;
-  margin-top: 46px;
-}
-
-.partners a:nth-child(4) {
-  margin-left: 103px;
-  margin-top: 65px;
-}
-
-.partners a:nth-child(5) {
-  margin-left: 121px;
-  margin-top: 52px;
-}
-
-.partners a:nth-child(2)::after {
-  top: 2px;
-  left: 248px;
-}
-
-.partners a:nth-child(3)::after {
-  top: 18px;
-  left: 253px;
-}
-
-.partners a:nth-child(4)::after {
-  top: -1px;
-  left: 241px;
+.partners a::after {
+  top: 22px;
+  left: 22px;
 }
 
 .statistic-list {
@@ -962,31 +937,40 @@ a.arrow {
 }
 
 .main-footer {
-  position: relative;
   margin-bottom: 70px;
 }
 
 .find-us {
-  position: relative;
+
   margin-bottom: 70px;
 }
 
+.find-us-centr {
+  width: 1439px;
+  height: 416px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .find-us .map {
-  width: 100%;
+  width: 1439px;
   height: 416px;
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 0;
+  background-position: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
-.find-us::after {
+.contacts::before{
   content: "";
   position: absolute;
   width: 231px;
   height: 190px;
   background-image: url("../img/map-marker.png");
-  top: 90px;
-  left: 1050px;
+  margin-left: 630px;
 }
 
 .contacts {
@@ -995,8 +979,8 @@ a.arrow {
   padding: 32px 50px 70px 50px;
   position: absolute;
   background-color: #ffffff;
-  top: 55px;
-  left: 370px;
+  margin-left: 140px;
+  margin-top: 56px;
 }
 
 .contacts p:first-child {
