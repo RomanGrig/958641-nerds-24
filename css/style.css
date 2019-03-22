@@ -277,7 +277,7 @@ div[class^="slide"] .slide-button {
   color: #bcbcbc;
 }
 
-.site-navigation .site-navigavion-current::after {
+.site-navigavion-current::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -965,11 +965,8 @@ a.arrow {
 }
 
 .find-us .map {
-  width: 1439px;
+  width: 1200px;
   height: 416px;
-  background-image: url("../img/map.jpg");
-  background-repeat: no-repeat;
-  background-position: 50%;
   margin-left: auto;
   margin-right: auto;
 
