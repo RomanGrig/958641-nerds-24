@@ -4,6 +4,7 @@ var popup = document.querySelector(".modal-write-us");
 var close = popup.querySelector(".modal-close");
 
 var button = popup.querySelector(".button-1");
+var form = popup.querySelector("form");
 var login = popup.querySelector("[name=name]");
 var email = popup.querySelector("[name=email]");
 var textarea = popup.querySelector(".letter-content");
@@ -36,12 +37,14 @@ button.addEventListener("click", function (evt) {
     popup.classList.remove("modal-error");
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("modal-error");
-} else {
-  if (isStorageSupport) {
-    localStorage.setitem("login", login.value);
-    localStorage.setitem("email", email.value);
   }
-}
+});
+
+form.addEventListener("submit", function (evt) {
+  if (isStorageSupport) {
+    localStorage.setItem("login", login.value);
+    localStorage.setItem("email", email.value);
+  }
 });
 
 window.addEventListener("keydown", function (evt) {

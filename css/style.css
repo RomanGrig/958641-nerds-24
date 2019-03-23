@@ -956,6 +956,11 @@ a.arrow {
   margin-bottom: 70px;
 }
 
+.find-us .container {
+  width: 1200px;
+  padding: 0;
+}
+
 .find-us-centr {
   width: 1439px;
   height: 416px;
@@ -969,6 +974,7 @@ a.arrow {
   height: 416px;
   margin-left: auto;
   margin-right: auto;
+  border: none;
 
 }
 
@@ -987,7 +993,7 @@ a.arrow {
   padding: 32px 50px 70px 50px;
   position: absolute;
   background-color: #ffffff;
-
+  margin-left: 20px;
   margin-top: 55px;
 }
 
@@ -1267,12 +1273,10 @@ a.arrow {
 .write-us-form .modal-close::before {
   content: "";
   position: absolute;
-
   width: 21px;
   height: 21px;
   top: -450px;
   left: 750px;
-
   background-image: url("../img/close-cross.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1282,7 +1286,6 @@ a.arrow {
 .modal-close:hover::before,
 .modal-close:focus::before {
   opacity: 1;
-
 }
 
 .modal-close:active::before{
