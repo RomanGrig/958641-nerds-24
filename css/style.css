@@ -93,7 +93,7 @@ input[type="radio"].visually-hidden {
   height: 18px;
   border-radius: 50%;
   padding: 8px;
-
+  vertical-align: middle;
 }
 
 .slider-controls  label::before {
@@ -272,8 +272,6 @@ div[class^="slide"] .slide-button {
 
 .site-navigation a:active,
 .user-navigation a:active {
-  text-decoration: none;
-  text-transform: uppercase;
   color: #bcbcbc;
 }
 
@@ -287,7 +285,12 @@ div[class^="slide"] .slide-button {
   top: 100%;
   left: 0;
   margin: 0;
+}
 
+.site-navigation .site-navigavion-current:hover,
+.site-navigation .site-navigavion-current:focus,
+.site-navigation .site-navigavion-current:active {
+  color: #000;
 }
 
 .user-navigation .basket {
@@ -391,6 +394,7 @@ div[class^="slide"] .slide-button {
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 400;
+  vertical-align: middle;
 }
 
 .price-controls input {
@@ -485,7 +489,7 @@ div[class^="slide"] .slide-button {
   width: 0px;
   height: 0px;
   left: -40px;
-  top: -2.7px;
+  top: -3px;
   opacity: 0.4;
   border: 4px solid #000000;
   border-radius: 50%;
@@ -498,8 +502,8 @@ div[class^="slide"] .slide-button {
   width: 0px;
   height: 0px;
 
-  top: 5.4px;
-  left: -31px;
+  top: 5.5px;
+  left: -31.5px;
   opacity: 0.4;
   border: 4px solid #000000;
   border-radius: 50%;
@@ -565,12 +569,12 @@ div[class^="slide"] .slide-button {
   margin-right: 0;
 }
 
-.sort a:hover,
-.sort a:focus {
+.sort a:hover {
   opacity: .6;
 }
 
-.sort a:active {
+.sort a:active,
+.sort a:focus {
   opacity: 1;
 }
 
@@ -582,12 +586,14 @@ div[class^="slide"] .slide-button {
   border-right-color: transparent;
   border-left-color: transparent;
   display: inline-block;
+  vertical-align: middle;
 }
 
 a.arrow {
   display: inline-block;
   font-size: 0;
   margin-right: 10px;
+  vertical-align: middle;
 }
 
 .arrow-up::before {
@@ -957,20 +963,15 @@ a.arrow {
 }
 
 .find-us .container {
-  width: 1200px;
-  padding: 0;
-}
-
-.find-us-centr {
-  width: 1439px;
-  height: 416px;
+  min-width: 100%;
+  padding: 0 40px;
   position: relative;
   margin-left: auto;
   margin-right: auto;
 }
 
 .find-us .map {
-  width: 1200px;
+  width: 100%;
   height: 416px;
   margin-left: auto;
   margin-right: auto;
@@ -1052,6 +1053,7 @@ a.arrow {
   color: #000000;
   line-height: 18px;
   border-radius: 5px;
+  vertical-align: middle;
 }
 
 .pagination-list a:hover,
@@ -1193,7 +1195,7 @@ a.arrow {
 
 .modal-write-us div {
   display: inline-block;
-
+  vertical-align: top;
 }
 
 .modal-write-us div:first-child {
@@ -1262,6 +1264,8 @@ a.arrow {
 .letter-content {
   width: 724px;
   min-height: 90px;
+  resize: none;
+  border-width: 2px;
 }
 
 .modal-write-us .modal-close {
