@@ -5,7 +5,7 @@
     <title>Магазин готовых шаблонов</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic"
      rel="stylesheet">
-     <link href="css/style.css" rel="stylesheet">
+     <link href="css/style-mini.css" rel="stylesheet">
      <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
@@ -67,7 +67,7 @@
                 </li>
                 <li class="filter-option">
                   <input type="radio" class="visually-hidden filter-input filter-input-radio" name="grid"
-                    id="filter-rubber" value="grid-rubber">
+                    id="filter-rubber" value="grid-rubber" disabled>
                   <label for="filter-rubber">Резиновая</label>
                 </li>
               </ul>
@@ -82,7 +82,7 @@
                 </li>
                 <li class="filter-option">
                   <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="privilege"
-                    id="filter-privilege">
+                    id="filter-privilege" disabled>
                   <label for="filter-privilege">Блок преимуществ</label>
                 </li>
                 <li class="filter-option">
@@ -241,7 +241,7 @@
             <p>191186, Санкт-Петербург,</p>
             <p>ул. Б. Конюшенная, д. 19/8</p>
             <p>тел. +7 (812) 275-75-75</p>
-            <a class="button button-1 write-button" href="#">Напишите нам</a>
+            <a class="button button-1 write-button" href="form.html">Напишите нам</a>
           </div>
           <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1998.5973228861562!2d30.320958988606556!3d59.938823740737945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1553227547046" width="1200" height="416" allowfullscreen></iframe>
         </div>
@@ -287,12 +287,12 @@
         </div>
         <div class="friendship">
           <b>Давайте дружить, это выгодно!</b>
-          <span class="fix-price">скидка 10% для друзей из социальных сетей.</span>
+          <span class="fix-price">Cкидка 10% для друзей из социальных сетей.</span>
         </div>
       </div>
       <section class="modal-write-us">
         <h2>Напишите нам</h2>
-        <form class="write-us-form" action="https://htmlacademy.ru" method="post">
+        <form class="write-us-form" action="" method="post">
           <div>
             <label for="write-us-name">Ваше имя:</label>
             <input type="text" class="write-us-name" name="name" placeholder="Имя Фамилия" id="write-us-name" required>
@@ -311,6 +311,6 @@
         </form>
       </section>
     </footer>
-    <script src="js/script.js" ></script>
+    <script src="js/script-mini.js" ></script>
   </body>
 </html>
